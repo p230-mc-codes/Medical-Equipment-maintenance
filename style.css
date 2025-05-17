@@ -46,6 +46,16 @@ a {
   text-decoration: none; /* remove default link styling */
 }
 
+.container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  background-color: #444;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
 a:hover {
   color: #4caf50; /* green hover color */
 }
