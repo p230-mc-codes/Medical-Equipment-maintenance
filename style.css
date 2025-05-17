@@ -2,7 +2,7 @@ body {
   color: #ffffff; /* white text */
   font-family: Outfit, sans-serif; /* default font */
   background: linear-gradient(270deg, #FFB3BA, #FFDFBA, #FFFFBA, #BAFFC9, #BAE1FF, #C9B3FF);
-  background-size: 1400% 1400%;
+  background-size: 100% 100%;
   animation: rainbow 15s ease infinite;
   transition: background-color 0.3s, color 0.3s;
 }
