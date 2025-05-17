@@ -1,0 +1,42 @@
+body {
+  background-color: #2f2f2f; /* dark gray background */
+  color: #ffffff; /* white text */
+  font-family: Outfit, sans-serif; /* default font */
+}
+
+.page {
+  max-width: 800px; /* set a maximum width for the content */
+  margin: 40px auto; /* add some space around the content */
+  padding: 20px; /* add some padding for readability */
+  background-color: #333333; /* dark gray background for the content */
+  border: 1px solid #444444; /* add a border for contrast */
+  border-radius: 10px; /* add a subtle border radius */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* add a subtle shadow */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #ffffff; /* white text for headings */
+}
+
+h1 {
+  font-size: 24px; /* larger font size for headings */
+}
+
+ul, ol {
+  list-style: none; /* remove default list styling */
+  padding: 0; /* remove default padding */
+  margin: 0; /* remove default margin */
+}
+
+li {
+  margin-bottom: 10px; /* add some space between list items */
+}
+
+a {
+  color: #66d9ef; /* blue link color */
+  text-decoration: none; /* remove default link styling */
+}
+
+a:hover {
+  color: #4caf50; /* green hover color */
+}
