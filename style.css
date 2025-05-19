@@ -76,7 +76,6 @@ a:hover {
   text-align: center;
 }
 
-/* Glowing Gradient Button */
 .button {
   position: relative;
   display: flex;
@@ -91,42 +90,41 @@ a:hover {
   border: none;
   border-radius: 8px;
   cursor: pointer;
-  z-index: 1;
-  overflow: hidden;
+  z-index: 2;
+  overflow: visible;
 }
 
-/* Glowing Border */
+/* Glowing Gradient Border */
 .button::before {
   content: '';
   position: absolute;
-  inset: 0;
-  left: -4px;
-  top: -1px;
-  margin: auto;
-  width: 128px;
-  height: 48px;
-  border-radius: 10px;
+  top: -8px;
+  left: -8px;
+  width: calc(100% + 16px);
+  height: calc(100% + 16px);
+  border-radius: 12px;
   background: linear-gradient(-45deg, #e81cff 0%, #40c9ff 100%);
   z-index: -2;
-  pointer-events: none;
   transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-/* Glow Effect */
+/* Outer Blur Glow */
 .button::after {
   content: "";
   position: absolute;
-  inset: 0;
+  top: -20px;
+  left: -20px;
+  width: calc(100% + 40px);
+  height: calc(100% + 40px);
+  border-radius: 16px;
   background: linear-gradient(-45deg, #fc00ff 0%, #00dbde 100%);
-  transform: scale(0.95);
-  filter: blur(20px);
+  filter: blur(25px);
   z-index: -3;
-  pointer-events: none;
   transition: filter 0.3s ease;
 }
 
 .button:hover::after {
-  filter: blur(30px);
+  filter: blur(35px);
 }
 
 .button:hover::before {
@@ -136,3 +134,4 @@ a:hover {
 .button:active::before {
   transform: scale(0.7);
 }
+
