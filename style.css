@@ -61,6 +61,8 @@ a {
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   transition: background-color 0.3s, box-shadow 0.3s;
   text-align: center;
+  overflow: visible; /* allow the glow to spread outside */
+  position: relative; /* needed for z-index context */
 }
 
 a:hover {
@@ -103,8 +105,8 @@ a:hover {
 
 .button::after {
   content: "";
-  z-index: -1;
-  position: absolute;
+  position: relative;
+  z-index: 1;
   inset: 0;
   background: linear-gradient(-45deg, #fc00ff 0%, #00dbde 100% );
   transform: translate3d(0, 0, 0) scale(0.95);
