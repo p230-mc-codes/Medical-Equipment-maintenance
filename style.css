@@ -63,6 +63,7 @@ a {
   text-align: center;
   overflow: visible; /* allow the glow to spread outside */
   position: relative; /* needed for z-index context */
+  z-index:0;
 }
 
 a:hover {
@@ -72,6 +73,7 @@ a:hover {
 /* From Uiverse.io by gharsh11032000 */ 
 .button {
   position: relative;
+  z-index: 1;
   width: 120px;
   height: 40px;
   background-color: #000;
@@ -89,12 +91,14 @@ a:hover {
 
 .button::before {
   content: '';
-  position: absolute;
+  position: relative;
+  z-index: 1;
   inset: 0;
   left: -4px;
   top: -1px;
   margin: auto;
-  width: 128px;
+  width: 128px;  position: relative;
+  z-index: 1;
   height: 48px;
   border-radius: 10px;
   background: linear-gradient(-45deg, #e81cff 0%, #40c9ff 100% );
