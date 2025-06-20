@@ -80,6 +80,7 @@ a:hover {
   position: relative;
   display: flex;
   align-items: center;
+  font-family: 'Outfit', sans-serif;
   justify-content: center;
   width: 120px;
   height: 40px;
